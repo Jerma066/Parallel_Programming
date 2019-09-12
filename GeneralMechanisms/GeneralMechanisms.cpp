@@ -5,8 +5,8 @@ using namespace std;
 
 int main(){
 	int i;
-	int sum = 0;
-	int N = 10;
+	long int sum = 0;
+	int N = 10000;
 	
 	#pragma omp parallel for if(N>4) private(i) reduction(+:sum) shared(N) schedule(static) 
 		for(i = 0; i < N+1; i++)
@@ -16,3 +16,4 @@ int main(){
 	
 	return 0;	
 }
+
