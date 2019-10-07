@@ -5,7 +5,7 @@
 int main(){
 
     int size = 1000;
-    int n = 8; 			//threads count
+    int n = 4; 			//threads count
 
 
     printf("Matrix size %d  \n", size);   
