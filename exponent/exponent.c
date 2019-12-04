@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <omp.h>
 
-#define NUM_OF_THREADS 4
+#define NUM_OF_THREADS 2
 
 int main(int argc, char* argv[])
 {
